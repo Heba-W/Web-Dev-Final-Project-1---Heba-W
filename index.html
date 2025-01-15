@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heba's Portfolio - Home</title>
+
+    <!--Linking with External CSS-->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!--Internal Styling-->
+    <style>
+
+        /*Welcome Section */
+        .intro{
+            background-image: url(Images/blueglassback.png);
+            filter: brightness(95%); /*Changing the brightness of the area*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: (#fff);
+            padding: 100px 30px;
+            text-align: center;
+        }
+
+        .intro p {
+            font-size: 19.2px;
+            margin-bottom: 2%;
+            color: #000000;
+        }
+
+        /*About Me Button*/
+        .a-button {
+            background-color: #4eb1f3;
+            color: rgb(0, 0, 0);
+            padding: 1% 1%;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .a-button:hover {
+            background-color: #2c98df;
+        }
+
+        /* About Me Section */
+        .about {
+            padding: 50px 30px;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+
+        .about h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            font-size: 19px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .projects {
+            padding: 5% 20%;
+            text-align: center;
+            background-color: #f0eded;
+        }
+
+        .projects h2 {
+            font-size: 2em;
+            margin-bottom: 30px;
+        }
+
+        .projects p {
+            font-size: 19px;
+        }
+
+        /*USE OF GRID HERE*/
+            .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+            gap: 30px;
+        }
+
+        .project-item {
+            background-color: #dbe7ef;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .project-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .project-item h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--Navigation Bar-->
+        <nav>
+            <div class="nav-title">
+                <h1>Heba W's Portfolio</h1>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" target="_blank">Projects</a></li>
+                <li><a href="experiences.html" target="_blank">Experiences</a></li>
+                <li><a href="contact.html" target="_blank">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <!-- Intro Section -->
+        <section class="intro">
+            <div class="intro-content">
+                <h1>Hi, I'm Heba Wali</h1>
+                <p>Welcome to my professional portfolio. I design, create, and innovate.</p>
+                <a href="experiences.html" class="a-button" target="_blank">View My Experience</a>
+            </div>
+        </section>
+    
+        <!-- About Me Section -->
+        <section>
+            <div class="about">
+                <h2>About Me</h2>
+                <p>I am a passionate web developer with experience in front-end development. 
+                    I love creating beautiful, functional websites, games, and applications that make a difference.</p>
+            </div>
+        </section>
+    
+        <!-- Projects Section -->
+        <section class="projects">
+            <h2>My Projects</h2>
+            <p>I love making Web and Game Projects. These are just a small preview of my favorite ones.
+                If you want to see them in full detail, click on the button below!</p>
+            </br>
+
+            <div class="project-grid">
+                <div class="project-item">
+                    <img src="Images/project1.png" alt="Preview of Web Project 1">
+                    <h3>Project 1</h3>
+                </div>
+                <div class="project-item">
+                    <img src="Images/project2.png" alt="Project 2">
+                    <h3>Project 2</h3>
+                </div>
+                <div class="project-item">
+                    <img src="Images/project3.png" alt="Project 3">
+                    <h3>Project 3</h3>
+                </div>
+            </div>
+
+            </br>
+            </br>
+
+            <a href="projects.html" class="a-button" target="_blank">View My Projects</a>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <!--Left (Social Connections Section)-->
+        <div class="socials">
+                <p>Email: hwali@smail.pembinatrails.ca</p>
+                <p>Phone: +1 123-456-7890</p>
+                <p>LinkedIn: linkedin.com/in/hebaw</p>
+                <p>X (Twitter): x.com/hebaw</p>
+        </div>
+        <!--Center (Copyright Section)-->
+        <div class="copyright">
+            <p>&copy; 2025 Heba W's Portfolio. All Rights Reserved.</p>
+            <p>Designed by Heba Wali</p>
+        </div>
+    </footer>
+</body>
+
+</html>

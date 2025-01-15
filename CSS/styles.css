@@ -1,0 +1,128 @@
+/*Styling all web pages*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    line-height: 140%;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #163445;
+    /*WebAIM Contrast Checkers says this contrast is 12.16:1*/
+}
+
+/*Alternate: bdc3c7*/
+
+/*Styling the Nav Bar*/
+nav {
+    display: flex; /*Adding flexbox*/
+    justify-content: space-between; /*Space between the title and links*/
+    align-items: center; /*Centering the title and links vertically*/
+    background-color: #333;
+    padding: 1.25% 0; /*Vertical padding in percent*/
+}
+
+/*Styling the title heading in the nav bar*/
+.nav-title h1 {
+    color: #ECF0F1;
+    margin: 3%; /*Adding margin from the edge*/
+    margin-left: 15%; /*Extra margin from the left*/
+    font-size: 24px;
+    flex-shrink: 0; /*Stops the title from making a new line*/
+    white-space: nowrap;
+}
+
+/*Styling the unordered list of links*/
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: -5%;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 2%; /*Horizontal margin between items in nav bar*/
+}
+
+/*Link styling*/
+nav ul li a {
+    color: #a0cde9;
+    text-decoration: none;
+    font-size: 20px;
+    position: relative;
+    padding: 2% -5%; /* Vertical and horizontal padding in percentage */
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+}
+
+/* Hover effects */
+nav ul li a::before {
+    content: ''; /*Decoration underline*/
+    position: absolute;
+    width: 0;
+    height: 0.5vh; /* Height relative to viewport height */
+    background-color: #c7e5f9; /*Underline color*/
+    bottom: 0;
+    left: 50%;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+nav ul li a:hover {
+    color: #c7e5f9;
+}
+
+/*Adds the showing underline*/
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #c7e5f9;
+}
+
+/*Buttons*/
+button {
+    background-color: #c7e5f9; /* Secondary Blue */
+    color: #ECF0F1; /* Light text */
+    border: none;
+    padding: 16px 32px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Vertical padding */
+    position: relative; /* Ensures footer stays at the bottom */
+    bottom: 0;
+    width: 100%;
+}
+
+.socials {
+    margin-left: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1px;
+    text-align: left;
+}
+
+.socials p {
+    flex: 0 0 45%;
+}
+
+.copyright {
+    text-align: center;
+    flex-grow: 1;
+}

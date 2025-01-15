@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heba's Portfolio - Contact Me</title>
+
+    <!--Linking with External CSS-->
+    <link rel="stylesheet" href="CSS/styles.css">
+
+    <!--Internal Styling-->
+    <style>
+        body {
+            background-color: #b2d8f0;
+            font-family: Arial, sans-serif;
+        }
+
+        /*Contact Form Section*/
+        .contact-form-section {
+            width: 50%;
+            margin: 5% auto;
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgb(0,0,0);
+            text-align: center;
+            max-width: 600px;
+        }
+
+        h1 {
+            font-size: 40px;
+            color: #2C3E50; /* Dark Blue */
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        /*Form Styling*/
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /*Use of grid*/
+        }
+
+        /*Showing Labels*/
+        label {
+            font-size: 19px;
+            color: #2C3E50; /* Dark Blue */
+            text-align: left;
+            font-weight: 500;
+        }
+
+        /*Input Boxes*/
+        input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #BDC3C7; /* Muted Grey */
+            border-radius: 8px;
+            width: 100%;
+            margin-top: 5px;
+            transition: border 0.3s ease;
+        }
+
+        /*When the input box is clicked on*/
+        input:focus {
+            background-color: #e8f2f9;
+        }
+
+        /*Buttons Flexbox*/
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            gap: 15px;
+        }
+
+        /*All Buttons*/
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 8px;
+            width: 45%; /*Making sure buttons are beside eachother*/
+        }
+
+        /*Submit Button*/
+        .submit-btn {
+            background-color: #3498DB; /*Secondary Blue*/
+            color: #fff;
+            border: none;
+        }
+
+        /*Hovering over submit*/
+        .submit-btn:hover {
+            background-color: #2980B9; /*Darker Blue*/
+        }
+
+        /*Rset Button*/
+        .reset-btn {
+            background-color: #E74C3C; /*Red*/
+            color: #fff;
+            border: none;
+        }
+
+        /*Hovering over the reset*/
+        .reset-btn:hover {
+            background-color: #C0392B; /*Darker Red*/
+        }
+    </style>
+</head>
+
+<body>
+    <head>
+        <!--Navigation Bar-->
+        <nav>
+            <div class="nav-title">
+                <h1>Heba W's Portfolio</h1>
+            </div>
+            <ul>
+                <li><a href="index.html" target="_blank">Home</a></li>
+                <li><a href="projects.html" target="_blank">Projects</a></li>
+                <li><a href="experiences.html" target="_blank">Experiences</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </head>
+
+    <main>
+
+        <section>
+            <div class="contact-form-section">
+                <h1>Contact Me</h1>
+                <form action="#" class="contact-form">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="eg. Jill Smith" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="eg. hello@email.com" required>
+
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="eg. 123 - 456 - 7890" required>
+
+                    <div class="button-group">
+                        <button type="submit" class="submit-btn">Submit</button>
+                        <button type="reset" class="reset-btn">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Heba W's Portfolio. All Rights Reserved.</p>
+        <p>Designed by Heba Wali</p>
+    </footer>
+</body>
+
+</html>
