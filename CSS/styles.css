@@ -104,7 +104,7 @@ button {
     background-color: #333; /* Dark background */
     color: #fff; /* White text color */
     text-align: center; /* Center the text */
-    padding: 20px 0; /* Vertical padding */
+    padding: 10px 0; /* Vertical padding */
     position: relative; /* Ensures footer stays at the bottom */
     bottom: 0;
     width: 100%;
@@ -112,17 +112,12 @@ button {
 
 .socials {
     margin-left: 2%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1px;
     text-align: left;
 }
 
-.socials p {
-    flex: 0 0 45%;
-}
 
 .copyright {
     text-align: center;
+    margin-right: 20%;
     flex-grow: 1;
 }
