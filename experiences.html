@@ -3,14 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heba's Portfolio - Experiences</title>
+    <title>Heba W's Portfolio - Experiences</title>
 
     <!--Linking with External CSS-->
     <link rel="stylesheet" href="CSS/styles.css">
+
+    <!--Internal Styling-->
+    <style>
+
+        body {
+            background-color: #f7f5f5;
+        }
+
+        .all-container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        .experience-section {
+            margin-bottom: 40px;
+        }
+
+        .experience-section h2 {
+            font-size: 28px;
+            color: #4eb1f3;
+            border-bottom: 3px solid #4eb1f3; /*Making a long underline that goes across and beyond the heading*/
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .experience-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgb(0,0,0,);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+
+        .experience-card h3 {
+            font-size: 22px;
+            color: #2c98df;
+            margin-bottom: 10px;
+        }
+
+        .experience-card ul li {
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+    </style>
 </head>
 
 <body>
-    <head>
+    <header>
         <!--Navigation Bar-->
         <nav>
             <div class="nav-title">
@@ -23,10 +69,73 @@
                 <li><a href="contact.html" target="_blank">Contact Me</a></li>
             </ul>
         </nav>
-    </head>
+    </header>
     
     <main>
-
+        <div class="all-container">
+                <h1>My Experiences</h1>
+            </br>
+            </br>
+            <section class="experience-section">
+                <h2>Highschool Experiences</h2>
+                <div class="experience-card">
+                    <h3>Pembina Trails Early College (PTEC)</h3>
+                    <p><strong>Dates:</strong> 2020 - Present</p>
+                    <p><strong>Responsibilities:</strong> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et quam leo.</p>
+                    <p><strong>Achievements:</strong> Improved project delivery time by 20%, contributed to company revenue growth by 15%.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Extracurriculars</h3>
+                    <p><strong>Dates:</strong> 2018 - 2020</p>
+                    <p><strong>Responsibilities:</strong> Curabitur sit amet mauris in nulla fermentum feugiat sit amet ut ligula.</p>
+                    <p><strong>Achievements:</strong> Developed a new workflow system that decreased team coordination time by 30%.</p>
+                </div>
+            </section>
+            
+            <section class="experience-section">
+                <h2>Internships</h2>
+                <div class="experience-card">
+                    <h3>Intern at Company Name</h3>
+                    <p><strong>Dates:</strong> Summer 2017</p>
+                    <p><strong>Responsibilities:</strong> Aenean in dui ac sapien feugiat interdum eu ac ligula.</p>
+                    <p><strong>Achievements:</strong> Contributed to marketing strategy for a new product launch.</p>
+                </div>
+            </section>
+            
+            <section class="experience-section">
+                <h2>Skills and Certifications</h2>
+                <div class="experience-card">
+                    <h3>Microsoft Certified Web Specialist</h3>
+                    <p><strong>Duration:</strong> 6 months</p>
+                    <p><strong>Description:</strong> Developed a new mobile application that streamlined business operations.</p>
+                </div>
+                <div class="experience-card">
+                    <h3>Another Project</h3>
+                    <p><strong>Duration:</strong> 3 months</p>
+                    <p><strong>Description:</strong> Designed and implemented a website redesign that improved user experience.</p>
+                </div>
+            </section>
+    
+            <section class="experience-section">
+                <h2>Challenges I Faced</h2>
+                <div class="experience-card">
+                    <h3>Skills Acquired</h3>
+                    <ul>
+                        <li>Web Development (HTML, CSS, JavaScript)</li>
+                        <li>Project Management</li>
+                        <li>UI/UX Design</li>
+                    </ul>
+                </div>
+                <div class="experience-card">
+                    <h3>Certifications</h3>
+                    <ul>
+                        <li>Certified Master</li>
+                        <li>Google Analytics Certification</li>
+                        <li>Advanced Python Programming</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer class="footer">
