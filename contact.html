@@ -10,17 +10,25 @@
 
     <!--Internal Styling-->
     <style>
+
+        /* LATER USE, THANKS PAGE
         body {
-            background-color: #b2d8f0;
-            font-family: Arial, sans-serif;
             background-image: url(Images/hooray.png);
+            background-repeat: repeat;
+            background-size: 50% 100%;
+        }*/
+
+        body {
+            background-color: #dde3e7;
         }
+
 
         /*Contact Form Section*/
         .contact-form-section {
+            border: 10px solid #055083;
             width: 50%;
             margin: 5% auto;
-            background-color: #ffffff;
+            background-color: #e0eef8;
             padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 8px rgb(0,0,0);
@@ -63,7 +71,7 @@
 
         /*When the input box is clicked on*/
         input:focus {
-            background-color: #e8f2f9;
+            background-color: #dde3e7;
         }
 
         /*Buttons Flexbox*/
@@ -83,14 +91,15 @@
 
         /*Submit Button*/
         .submit-btn {
-            background-color: #3498DB; /*Secondary Blue*/
-            color: #fff;
-            border: none;
+            background-color: #4eb1f3; /*Secondary Blue*/
+            color: #000;
+            border: 3px solid #055083;
         }
 
         /*Hovering over submit*/
         .submit-btn:hover {
             background-color: #2980B9; /*Darker Blue*/
+            color: #fff;
         }
 
         /*Rset Button*/
@@ -136,6 +145,8 @@
 
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" placeholder="eg. 123 - 456 - 7890" required>
+
+                    </br>
 
                     <div class="button-group">
                         <button type="submit" class="submit-btn">Submit</button>

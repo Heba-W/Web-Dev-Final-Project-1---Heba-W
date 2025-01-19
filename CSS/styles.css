@@ -9,7 +9,7 @@
 
 body {
     background-color: #f7f7f7;
-    color: #163445;
+    color: #14222c;
     /*WebAIM Contrast Checkers says this contrast is 12.16:1*/
 }
 
@@ -20,7 +20,7 @@ nav {
     display: flex; /*Adding flexbox*/
     justify-content: space-between; /*Space between the title and links*/
     align-items: center; /*Centering the title and links vertically*/
-    background-color: #333;
+    background-color: #14222c;
     padding: 1.25% 0; /*Vertical padding in percent*/
 }
 
@@ -101,7 +101,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333; /* Dark background */
+    background-color: #14222c; /* Dark background */
     color: #fff; /* White text color */
     text-align: center; /* Center the text */
     padding: 10px 0; /* Vertical padding */
