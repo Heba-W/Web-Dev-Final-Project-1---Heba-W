@@ -14,6 +14,7 @@
             background-color: #dde3e7;
         }
 
+        /*Styling one specific heading only*/
         #heading1 {
             width: 80%;
             margin: 1%;
@@ -21,6 +22,7 @@
             padding: 2% 0;
         }
 
+        /*Making the Project cards display as flex*/
         #project-flexing {
             display: flex;
             justify-content: space-between;
@@ -28,7 +30,7 @@
             flex-wrap: wrap;      
         }
 
-        /*Styling every Web Project, they have same styling*/
+        /*Styling every Web Project card, they have same styling*/
         .all-project {
             background-color: #e0eef8;
             border-radius: 8px;
@@ -39,32 +41,33 @@
             transition: transform 0.3s ease-in-out;
         }
 
-        /*When hovering over a project*/
+        /*When hovering over a project card*/
         .all-project:hover {
             transform: scale(1.05); /*Making it grow a little when it's hovered*/
         }
 
+        /*Styling the image in each project card*/
         .all-project-image {
             width: 100%;
             height: auto;
             display: block;
         }
 
-        .all-project-info {
+        .all-project-brief {
+            color: #000000;
+            font-size: 16px;
+            margin-bottom: 1.5%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .all-project-detail {
             padding: 5%;
         }
 
         .all-project-h3 {
             color: #2980b9;
             margin-bottom: 1%;
-        }
-
-        .all-project-desc {
-            color: #000000;
-            font-size: 16px;
-            margin-bottom: 1.5%;
-            margin-left: 5%;
-            margin-right: 5%;
         }
 
         .all-project-link {
@@ -81,6 +84,11 @@
         .all-project-link:hover {
             background-color: #4eb1f3;
             color: #000000;
+        }
+
+        figcaption {
+            font-size: 14px;
+            text-align: center;
         }
 
     </style>
@@ -109,15 +117,21 @@
             <!--Showcasing Web Project 1-->
             <div class="all-project">
                 <h3>• Web Project 1 •</h3>
-                <img src="Images/project1.png" alt="Webpage Preview of Web Project 1" class="all-project-image">
+                <fig>
+                    <img src="Images/project1.png" alt="Screenshot Preview of Web Project 1" class="all-project-image">
+                    <figcaption>
+                        <p>Screenshot preview of Heba's Web Project 1</p>
+                    </figcaption>
+                </fig>
                 </br>
-                <p class="all-project-desc">This is my first Web Project. It's shopping site for my mock business, 
+                </br>
+                <p class="all-project-brief">This is my first Web Project. It's shopping site for my mock business, 
                     the Hardware Hub. It sells different computer parts and gives information about them.</p>
                 </br>
                 <a href="https://heba-w.github.io/Web-Project-1--Heba-/index.html" class="all-project-link" target="_blank">View Project</a>
                 </br>
                 <!--Project 1 Info-->
-                <div class="all-project-info">
+                <div class="all-project-detail">
                     <h4>Detailed Description</h4>
                     <p>When I first started programming this website, I was very excited because I thought 
                         I could make anything I want. I didn't realize how much time and effort I would need though, 
@@ -132,16 +146,22 @@
             <!--Showcasing Web Project 2-->
             <div class="all-project">
                 <h3>• Web Project 2 •</h3>
-                <img src="Images/project2.png" alt="Webpage Preview of Web Project 2" class="all-project-image">
+                <fig>
+                    <img src="Images/project2.png" alt="Webpage Preview of Web Project 2" class="all-project-image">
+                    <figcaption>
+                        <p>Screenshot preview of Heba's Web Project 2</p>
+                    </figcaption>
+                </fig>
                 </br>
-                <p class="all-project-desc">My second Web Project is about Treaty 1. It has
-                    information like maps, historic terms, outside promises, and more. It is also the project where 
+                </br>
+                <p class="all-project-brief">My second Web Project is about Treaty 1. It has
+                    information like maps, historic terms, outside promises, and more. It's also when 
                     I first tried CSS Styling.</p>
                 </br>
                 <a href="https://heba-w.github.io/Web-Project--2---Heba-W/index.html" class="all-project-link" target="_blank">View Project</a>
                 </br>
                 <!--Project 2 Info-->
-                <div class="all-project-info">
+                <div class="all-project-detail">
                     <h4>Detailed Description</h4>
                     <p>Web Project 2 required more effort than Web Project 1. I had to research lots of information about 
                         Treaty 1, which took up half time I spent on the project. Things that are showcased in my project 
@@ -155,16 +175,28 @@
             <!--Showcasing Web Project 3-->
             <div class="all-project">
                 <h3>• Web Project 3 •</h3>
-                <img src="Images/project3.png" alt="Webpage Preview of Web Project 3" class="all-project-image">
+                <fig>
+                    <img src="Images/project3.png" alt="Webpage Preview of Web Project 3" class="all-project-image">
+                    <figcaption>
+                        <p>Screenshot preview of Web Project 3</p>
+                    </figcaption>
+                </fig>
                 </br>
-                <p class="all-project-desc">This is my third Web Project. It's an updated version of 
+                </br>
+                <p class="all-project-brief">This is my third Web Project. It's an updated version of 
                     Web Project 2. It has an improved color scheme and added organization.</p>
                 </br>
                 <a href="https://heba-w.github.io/Web-Project-3/index.html" class="all-project-link" target="_blank">View Project</a>
                 </br>            
                 <!--Project 3 Info-->
-                <div class="all-project-info">
+                <div class="all-project-detail">
                     <h4>Detailed Description</h4>
+                    <p>Web Project 3 is an improved version of Web Project 2. It was easier than my other web projects, because 
+                        I had a better understanding of CSS styling. Also, I learned about Color Theory, and how I can implement 
+                        a good color scheme. I also learned about Typography, like line spacing and proper html organization. I 
+                        also made more web pages and organized the sections in their appropriate pages. Overall, I enjoyed making 
+                        this project.
+                    </p>
                 </div>
             </div>
 

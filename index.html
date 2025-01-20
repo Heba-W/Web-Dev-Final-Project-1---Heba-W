@@ -11,7 +11,7 @@
     <!--Internal Styling-->
     <style>
 
-        /*Welcome Section */
+        /*Welcome Section*/
         .intro{
             background-image: url(Images/lightglassback.jpg); /*This is a stock image, it might be hard to see*/
             filter: brightness(1); /*Changing the brightness of the area*/
@@ -22,14 +22,15 @@
             text-align: center;
         }
 
+        /*Paragraphs for the welcom section*/
         .intro p {
             font-size: 19.2px;
             margin-bottom: 2%;
             color: #000000;
         }
 
-        /*About Me Button*/
-        .a-button {
+        /*All Buttons on the Home Page*/
+        .h-button {
             background-color: #4eb1f3;
             color: rgb(0, 0, 0);
             padding: 1% 1%;
@@ -38,51 +39,58 @@
             transition: background-color 0.3s;
         }
 
-        .a-button:hover {
+        /*Hovering over the buttons on the home page*/
+        .h-button:hover {
             background-color: #2c98df;
         }
 
-        /* About Me Section */
+        /*About Me Section*/
         .about {
             padding: 50px 30px;
             text-align: center;
             background-color: #e0eef8;
         }
 
+        /*H2 in the About Me Section*/
         .about h2 {
             font-size: 32px;
             margin-bottom: 20px;
         }
 
+        /*Paragraphs in the About Me Section*/
         .about p {
             font-size: 19px;
             max-width: 800px;
             margin: 0 auto;
         }
 
-        /* Projects Section */
+        /*My Projects Section*/
         .projects {
             padding: 5% 20%;
             text-align: center;
             background-color: #dde3e7;
         }
 
+        /*H2 in the My Projects Section*/
         .projects h2 {
             font-size: 2em;
             margin-bottom: 30px;
         }
 
+        /*Paragraphs in the My Projects Section*/
         .projects p {
             font-size: 19px;
         }
 
+        /*Making the project preview boxes in a grid*/
         /*USE OF GRID HERE*/
-            .project-grid {
+        .project-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
             gap: 30px;
         }
 
+        /*Styling each project preview box*/
         .project-item {
             background-color: #e0eef8;
             border: 3px solid #055083;
@@ -90,6 +98,7 @@
             border-radius: 8px;
         }
 
+        /*Each image in the project preview box*/
         .project-item img {
             width: 100%;
             height: auto;
@@ -97,11 +106,13 @@
             margin-bottom: 15px;
         }
 
+        /*H3 in the project preview box*/
         .project-item h3 {
             font-size: 24px;
             margin-bottom: 10px;
         }
 
+        /*Paragraphs in the project preview box*/
         .project-item p {
             font-size: 16px;
         }
@@ -125,40 +136,49 @@
     </header>
     <main>
 
-        <!-- Intro Section -->
-        <section class="intro">
-            <div class="intro-content">
+        <!--Intro Section-->
+        <section>
+            <div class="intro">
                 <h1>Hi, I'm Heba Wali</h1>
                 <p>Welcome to my professional portfolio. I design, create, and innovate.</p>
-                <a href="experiences.html" class="a-button" target="_blank">View My Experience</a>
+
+                <!--View My Experiences Button-->
+                <a href="experiences.html" class="h-button" target="_blank">View My Experience</a>
             </div>
         </section>
     
-        <!-- About Me Section -->
+        <!--About Me Section-->
         <section>
             <div class="about">
                 <h2>About Me</h2>
                 <p>I am a passionate web developer with experience in front-end development. 
-                    I love creating beautiful, functional websites, games, and applications that make a difference.</p>
+                I love creating beautiful, functional websites, games, and applications that make a difference.</p>
             </div>
         </section>
     
-        <!-- Projects Section -->
+        <!--Projects Section-->
         <section class="projects">
             <h2>My Projects</h2>
             <p>I love making Web and Game Projects. These are just a small preview of my favorite ones.
                 If you want to see them in full detail, click on the button below!</p>
             </br>
 
+            <!--Project Preview Grid-->
             <div class="project-grid">
+
+                <!--Project 1 Preview-->
                 <div class="project-item">
                     <img src="Images/project1.png" alt="Preview of Web Project 1">
                     <h3>Project 1</h3>
                 </div>
+
+                <!--Project 2 Preview-->
                 <div class="project-item">
                     <img src="Images/project2.png" alt="Project 2">
                     <h3>Project 2</h3>
                 </div>
+
+                <!--Project 3 Preview-->
                 <div class="project-item">
                     <img src="Images/project3.png" alt="Project 3">
                     <h3>Project 3</h3>
@@ -168,13 +188,14 @@
             </br>
             </br>
 
-            <a href="projects.html" class="a-button" target="_blank">View My Projects</a>
+            <!--View My Projects Button-->
+            <a href="projects.html" class="h-button" target="_blank">View My Projects</a>
         </section>
 
     </main>
 
     <footer class="footer">
-        <!--Left (Social Connections Section)-->
+        <!--Left Side (Social Connections Section)-->
         <div class="socials">
                 <p><span style="text-decoration: underline;">Email:</span> hwali@smail.pembinatrails.ca</p>
                 <p><span style="text-decoration: underline;">Phone:</span> +1 123-456-7890</p>
