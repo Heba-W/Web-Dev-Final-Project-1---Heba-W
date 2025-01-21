@@ -10,7 +10,6 @@
 
     <!--Internal Styling-->
     <style>
-
         /*Welcome Section*/
         .intro{
             background-image: url(Images/lightglassback.jpg); /*This is a stock image, it might be hard to see*/
@@ -73,7 +72,7 @@
 
         /*H2 in the My Projects Section*/
         .projects h2 {
-            font-size: 2em;
+            font-size: 32px;
             margin-bottom: 30px;
         }
 
@@ -116,6 +115,10 @@
         .project-item p {
             font-size: 16px;
         }
+
+        figcaption {
+            font-size: 12px;
+        }
     </style>
 </head>
 
@@ -130,7 +133,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html" target="_blank">Projects</a></li>
                 <li><a href="experiences.html" target="_blank">Experiences</a></li>
-                <li><a href="contact.html" target="_blank">Contact Me</a></li>
+                <li><a href="contact.html" target="_blank">Feedback</a></li>
             </ul>
         </nav>
     </header>
@@ -168,19 +171,34 @@
 
                 <!--Project 1 Preview-->
                 <div class="project-item">
-                    <img src="Images/project1.png" alt="Preview of Web Project 1">
+                    <fig>
+                        <img src="Images/project1.png" alt="Preview of Web Project 1">
+                        <figcaption>
+                            <p>Screenshot preview of Project 1</p>
+                        </figcaption>
+                    </fig>
                     <h3>Project 1</h3>
                 </div>
 
                 <!--Project 2 Preview-->
                 <div class="project-item">
-                    <img src="Images/project2.png" alt="Project 2">
+                    <fig>
+                        <img src="Images/project2.png" alt="Project 2">
+                        <figcaption>
+                            <p>Screenshot preview of Project 2</p>
+                        </figcaption>
+                    </fig>
                     <h3>Project 2</h3>
                 </div>
 
                 <!--Project 3 Preview-->
                 <div class="project-item">
-                    <img src="Images/project3.png" alt="Project 3">
+                    <fig>
+                        <img src="Images/project3.png" alt="Project 3">
+                        <figcaption>
+                            <p>Screenshot preview of Project 3</p>
+                        </figcaption>
+                    </fig>
                     <h3>Project 3</h3>
                 </div>
             </div>
@@ -194,14 +212,16 @@
 
     </main>
 
+    <!--Footer-->
     <footer class="footer">
         <!--Left Side (Social Connections Section)-->
         <div class="socials">
-                <p><span style="text-decoration: underline;">Email:</span> hwali@smail.pembinatrails.ca</p>
-                <p><span style="text-decoration: underline;">Phone:</span> +1 123-456-7890</p>
-                <p><span style="text-decoration: underline;">LinkedIn:</span> linkedin.com/in/hebaw</p>
-                <p><span style="text-decoration: underline;">X (Twitter):</span> x.com/hebaw</p>
+                <p><span style="text-decoration: underline;">Email:</span><a href="https://www.microsoft.com/en-us/microsoft-365/outlook/log-in" target="_blank"> hwali@smail.pembinatrails.ca</a></p>
+                <p><span style="text-decoration: underline;">Instagram:</span><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"> instagram.com/hebaw</a></p>
+                <p><span style="text-decoration: underline;">LinkedIn:</span><a href="https://www.linkedin.com/login" target="_blank"> linkedin.com/hebaw</a></p>
+                <p><span style="text-decoration: underline;">Phone:</span> +1 098-765-4321</p>
         </div>
+
         <!--Center (Copyright Section)-->
         <div class="copyright">
             <p>&copy; 2025 Heba W's Portfolio. All Rights Reserved.</p>

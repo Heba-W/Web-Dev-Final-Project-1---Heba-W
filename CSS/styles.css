@@ -1,4 +1,4 @@
-/*Styling all web pages*/
+/*Styling everything of all web pages*/
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +12,6 @@ body {
     color: #14222c;
     /*WebAIM Contrast Checkers says this contrast is 12.16:1*/
 }
-
-/*Alternate: bdc3c7*/
 
 /*Styling the Nav Bar*/
 nav {
@@ -44,6 +42,7 @@ nav ul {
     padding: 0;
 }
 
+/*Each list item in the nav list*/
 nav ul li {
     margin: 0 2%; /*Horizontal margin between items in nav bar*/
 }
@@ -59,7 +58,8 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-/* Hover effects */
+/*Editing the links before the show on eh nav bar
+ChatGPT helped with the content decotration*/
 nav ul li a::before {
     content: ''; /*Decoration underline*/
     position: absolute;
@@ -72,50 +72,65 @@ nav ul li a::before {
     transform: translateX(-50%);
 }
 
+/*Hovering over the links*/
 nav ul li a:hover {
     color: #c7e5f9;
 }
 
-/*Adds the showing underline*/
+/*Content before the hovering showing
+Adds the showing underline*/
 nav ul li a:hover::before {
     width: 100%;
 }
 
-nav ul li a.active {
-    font-weight: bold;
-    color: #c7e5f9;
+/*All figcaptions*/
+figcaption {
+    font-size: 14px;
+    text-align: center;
 }
 
-/*Buttons*/
+/* All Buttons. they will be overridden by the other specific pages*/
 button {
-    background-color: #c7e5f9; /* Secondary Blue */
-    color: #ECF0F1; /* Light text */
+    background-color: #c7e5f9; /* Secondary Blue*/
+    color: #ECF0F1; /*Light text*/
     border: none;
     padding: 16px 32px;
     text-transform: uppercase;
     border-radius: 5px;
 }
 
-/* Footer styling */
+/*Footer styling*/
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #14222c; /* Dark background */
-    color: #fff; /* White text color */
-    text-align: center; /* Center the text */
-    padding: 10px 0; /* Vertical padding */
-    position: relative; /* Ensures footer stays at the bottom */
+    background-color: #14222c; /*Same background color as nav bar*/
+    color: #fff;
+    text-align: center; /*Center the text*/
+    padding: 10px 0; /*Vertical padding*/
+    position: relative; /*Ensures footer stays at the bottom*/
     bottom: 0;
     width: 100%;
 }
 
+/*Links in the footer*/
+.footer a {
+    text-decoration: none;
+    color: #a0cde9;
+}
+
+/*Hovering over the links in the footer*/
+.footer a:hover {
+    color: #4eb1f3;
+}
+
+/*Positioning the social connections to the left side of the footer*/
 .socials {
     margin-left: 2%;
     text-align: left;
 }
 
-
+/*Positioning copyright info to the center of the footer*/
 .copyright {
     text-align: center;
     margin-right: 20%;

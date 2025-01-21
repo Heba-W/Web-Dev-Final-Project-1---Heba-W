@@ -10,14 +10,7 @@
 
     <!--Internal Styling-->
     <style>
-
-        /* LATER USE, THANKS PAGE
-        body {
-            background-image: url(Images/hooray.png);
-            background-repeat: repeat;
-            background-size: 50% 100%;
-        }*/
-
+        /*Styling Body*/
         body {
             background-image: url(Images/swirls\(c\).png);
             background-size: 100%;
@@ -26,7 +19,7 @@
 
 
         /*Contact Form Section*/
-        .contact-form-section {
+        .feedback-form-section {
             border: 10px solid #055083;
             width: 50%;
             margin: 5% auto;
@@ -38,15 +31,16 @@
             max-width: 600px;
         }
 
+        /*All H1*/
         h1 {
             font-size: 40px;
-            color: #2C3E50; /* Dark Blue */
+            color: #2C3E50; 
             margin-bottom: 20px;
             font-weight: 600;
         }
 
-        /*Form Styling*/
-        .contact-form {
+        /*Actual Form Styling*/
+        .feedback-form {
             display: flex;
             flex-direction: column;
             gap: 20px; /*Use of grid*/
@@ -55,7 +49,7 @@
         /*Showing Labels*/
         label {
             font-size: 19px;
-            color: #2C3E50; /* Dark Blue */
+            color: #2C3E50;
             text-align: left;
             font-weight: 500;
         }
@@ -64,11 +58,10 @@
         input {
             padding: 10px;
             font-size: 16px;
-            border: 1px solid #BDC3C7; /* Muted Grey */
+            border: 1px solid #BDC3C7; /*Muted Grey*/
             border-radius: 8px;
             width: 100%;
             margin-top: 5px;
-            transition: border 0.3s ease;
         }
 
         /*When the input box is clicked on*/
@@ -76,14 +69,14 @@
             background-color: #dde3e7;
         }
 
-        /*Buttons Flexbox*/
+        /*Buttons Flexbox. Putting them beside eachother*/
         .button-group {
             display: flex;
             justify-content: space-between;
             gap: 15px;
         }
 
-        /*All Buttons*/
+        /*Styling the Buttons*/
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -98,20 +91,20 @@
             border: 3px solid #055083;
         }
 
-        /*Hovering over submit*/
+        /*Hovering over submit button*/
         .submit-btn:hover {
             background-color: #2980B9; /*Darker Blue*/
             color: #fff;
         }
 
-        /*Rset Button*/
+        /*Reset Button*/
         .reset-btn {
             background-color: #E74C3C; /*Red*/
             color: #fff;
             border: 3px solid #78160c;
         }
 
-        /*Hovering over the reset*/
+        /*Hovering over the reset button*/
         .reset-btn:hover {
             background-color: #C0392B; /*Darker Red*/
             border: 3px solid #78160c;
@@ -130,27 +123,38 @@
                 <li><a href="index.html" target="_blank">Home</a></li>
                 <li><a href="projects.html" target="_blank">Projects</a></li>
                 <li><a href="experiences.html" target="_blank">Experiences</a></li>
-                <li><a href="contact.html">Contact Me</a></li>
+                <li><a href="contact.html">Feedback</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
+        <!--Section for the Feedback Form-->
         <section>
-            <div class="contact-form-section">
-                <h1>Questions? Contact Me!</h1>
-                <form action="#" class="contact-form">
+            <div class="feedback-form-section">
+                <h1>Have Feedback? Help me Improve!</h1>
+                <!--Actual Form-->
+                <form action="#" class="feedback-form">
+
+                    <!--Full Name-->
                     <label for="name">Full Name</label>
                     <input type="text" id="name" name="name" placeholder="eg. Jill Smith" required>
 
+                    <!--Email Address-->
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" placeholder="eg. hello@email.com" required>
 
+                    <!--Phone Number-->
                     <label for="phone">Phone Number</label>
                     <input type="tel" id="phone" name="phone" placeholder="eg. 123 - 456 - 7890" required>
 
-                    </br>
+                    <!--Questions/Comments-->
+                    <label for="question">Questions/Comments</label>
+                    <textarea id="question" name="question" rows="4" cols="50"></textarea>
 
+                    </br>
+                    
+                    <!--Submit and Reset Button-->
                     <div class="button-group">
                         <button type="submit" class="submit-btn">Submit</button>
                         <button type="reset" class="reset-btn">Reset</button>
@@ -161,14 +165,16 @@
 
     </main>
 
+    <!--Footer-->
     <footer class="footer">
-        <!--Left (Social Connections Section)-->
+        <!--Left Side (Social Connections Section)-->
         <div class="socials">
-                <p><span style="text-decoration: underline;">Email:</span> hwali@smail.pembinatrails.ca</p>
-                <p><span style="text-decoration: underline;">Phone:</span> +1 123-456-7890</p>
-                <p><span style="text-decoration: underline;">LinkedIn:</span> linkedin.com/in/hebaw</p>
-                <p><span style="text-decoration: underline;">X (Twitter):</span> x.com/hebaw</p>
-        </div>
+            <p><span style="text-decoration: underline;">Email:</span><a href="https://www.microsoft.com/en-us/microsoft-365/outlook/log-in" target="_blank"> hwali@smail.pembinatrails.ca</a></p>
+            <p><span style="text-decoration: underline;">Instagram:</span><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"> instagram.com/hebaw</a></p>
+            <p><span style="text-decoration: underline;">LinkedIn:</span><a href="https://www.linkedin.com/login" target="_blank"> linkedin.com/hebaw</a></p>
+            <p><span style="text-decoration: underline;">Phone:</span> +1 098-765-4321</p>
+    </div>
+
         <!--Center (Copyright Section)-->
         <div class="copyright">
             <p>&copy; 2025 Heba W's Portfolio. All Rights Reserved.</p>
