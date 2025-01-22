@@ -2,15 +2,26 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    line-height: 140%;
+    line-height: 140%; /*Typography Principle*/
+
+    /*Adding Cross-Browser Compatibility in Box Sizing*/
+    -webkit-box-sizing: border-box; /*Webkit*/
+    -moz-box-sizing: border-box; /*Firefox*/
+    -o-box-sizing: border-box; /*Opera*/
+    box-sizing: border-box; /*Standard*/
+
+    /*Styling flexbox and adding cross-browser comapatibility*/
 }
 
 body {
     background-color: #f7f7f7;
     color: #14222c;
     /*WebAIM Contrast Checkers says this contrast is 12.16:1*/
+}
+
+h1 {
+    text-align: center;
 }
 
 /*Styling the Nav Bar*/
@@ -34,7 +45,7 @@ nav {
 
 /*Styling the unordered list of links*/
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /*removing the "dot"*/
     display: flex;
     justify-content: center;
     width: 100%;
@@ -58,7 +69,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-/*Editing the links before the show on eh nav bar
+/*Editing the links before the show on th nav bar
 ChatGPT helped with the content decotration*/
 nav ul li a::before {
     content: ''; /*Decoration underline*/

@@ -17,6 +17,13 @@
             background-repeat: no-repeat;
         }
 
+        /*All H1*/
+        h1 {
+            font-size: 40px;
+            color: #2C3E50; 
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
 
         /*Contact Form Section*/
         .feedback-form-section {
@@ -31,19 +38,11 @@
             max-width: 600px;
         }
 
-        /*All H1*/
-        h1 {
-            font-size: 40px;
-            color: #2C3E50; 
-            margin-bottom: 20px;
-            font-weight: 600;
-        }
-
         /*Actual Form Styling*/
         .feedback-form {
             display: flex;
-            flex-direction: column;
-            gap: 20px; /*Use of grid*/
+            flex-direction: column; /*Each input box is on top of eachother*/
+            gap: 20px; /*Space between the the inputs*/
         }
 
         /*Showing Labels*/
@@ -58,15 +57,31 @@
         input {
             padding: 10px;
             font-size: 16px;
+            border: 1px solid #bdc3c7; /*Muted Grey*/
+            border-radius: 8px;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        /*When an input box is clicked on*/
+        input:focus {
+            background-color: #e8eef0;
+        }
+
+        /*Text Area box. It has the same styling as input, 
+        but it's not applicable because text area is not an attribuee of input*/
+        textarea {
+            padding: 10px;
+            font-size: 16px;
             border: 1px solid #BDC3C7; /*Muted Grey*/
             border-radius: 8px;
             width: 100%;
             margin-top: 5px;
         }
 
-        /*When the input box is clicked on*/
-        input:focus {
-            background-color: #dde3e7;
+        /*When the textarea box is clicked on*/
+        textarea:focus {
+            background-color: #e8eef0;
         }
 
         /*Buttons Flexbox. Putting them beside eachother*/
@@ -112,7 +127,10 @@
     </style>
 </head>
 
-<body>
+<!--This is inline because the background color wasn't being consistent.
+    Also, I made it a bit darker than normal, so the empty space blends 
+    in with the bottom of the background image.-->
+<body style="background-color: #cdd0d2;">
     <header>
         <!--Navigation Bar-->
         <nav>
@@ -132,9 +150,9 @@
         <!--Section for the Feedback Form-->
         <section>
             <div class="feedback-form-section">
-                <h1>Have Feedback? Help me Improve!</h1>
+                <h1>Have Feedback? Help Me Improve!</h1>
                 <!--Actual Form-->
-                <form action="#" class="feedback-form">
+                <form class="feedback-form">
 
                     <!--Full Name-->
                     <label for="name">Full Name</label>
@@ -150,7 +168,7 @@
 
                     <!--Questions/Comments-->
                     <label for="question">Questions/Comments</label>
-                    <textarea id="question" name="question" rows="4" cols="50"></textarea>
+                    <textarea id="question" name="question" rows="3" cols="50" placeholder="You can also tell me your story!"></textarea>
 
                     </br>
                     
@@ -172,7 +190,7 @@
             <p><span style="text-decoration: underline;">Email:</span><a href="https://www.microsoft.com/en-us/microsoft-365/outlook/log-in" target="_blank"> hwali@smail.pembinatrails.ca</a></p>
             <p><span style="text-decoration: underline;">Instagram:</span><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"> instagram.com/hebaw</a></p>
             <p><span style="text-decoration: underline;">LinkedIn:</span><a href="https://www.linkedin.com/login" target="_blank"> linkedin.com/hebaw</a></p>
-            <p><span style="text-decoration: underline;">Phone:</span> +1 098-765-4321</p>
+            <p><span style="text-decoration: underline;">Phone:</span><a href="https://app.zoom.us/wc" target="_blank"> +1 098-765-4321</a></p>
     </div>
 
         <!--Center (Copyright Section)-->

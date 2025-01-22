@@ -10,21 +10,22 @@
 
     <!--Internal Styling-->
     <style>
-        body {
-            background-color: #dde3e7;
-        }
-
-        /*Styling one specific heading only*/
+        /*Styling the tile heading specifically only*/
         #heading1 {
             width: 80%;
             margin: 1%;
-            margin-left: 2.5%;
+            margin-left: 10%;
             padding: 2% 0;
         }
 
         /*Making the Project cards display as flex*/
         #project-flexing {
-            display: flex;
+            /*Styling flexbox and adding cross-browser comapatibility*/
+            display: -moz-box; /*Firefox*/
+            display: -webkit-flex; /*Safari*/
+            display: flex; /*Standard*/
+
+
             justify-content: space-between;
             margin: 2%;
             flex-wrap: wrap;      
@@ -36,7 +37,7 @@
             border-radius: 8px;
             border: 3px solid #4eb1f3;
             box-shadow: 0 4px 8px rgba (0,0,0,0.1);
-            width: 30%;
+            width: 31.5%;
             overflow: auto; /*Adding a scroll bar if necessary, when text is too much.*/
             transition: transform 0.3s ease-in-out;
         }
@@ -44,6 +45,10 @@
         /*When hovering over a project card*/
         .all-project:hover {
             transform: scale(1.05); /*Making it grow a little when it's hovered*/
+        }
+
+        .all-project p {
+            font-size: 16px;
         }
 
         /*Styling the image in each project card*/
@@ -78,6 +83,7 @@
             color: #2980b9;
             text-decoration: none; /*Removing the underline from the link*/
             font-weight: bold;
+            font-size: 18px;
             border: 2px solid #2980b9;
             padding: 2% 4%;
             margin-left: 32.5%;
@@ -90,11 +96,11 @@
             background-color: #4eb1f3;
             color: #000000;
         }
-
     </style>
 </head>
 
-<body>
+<!--This is inline because the background color wasn't being consistent-->
+<body style="background-color: #e4e8eb;">
     <header>
         <!--Navigation Bar-->
         <nav>
@@ -112,31 +118,39 @@
 
     <main>
         <h1 id="heading1">My Projects</h1>
-        <!--All Projects (They are combined in 1 Section Only)-->
+        <!--All Projects (They are combined in 1 Section all together for easier styling)-->
         <section id="project-flexing">
 
             <!--Showcasing Web Project 1-->
             <div class="all-project">
                 <h3>• Web Project 1 •</h3>
+
                 <!--Web Project 1 Image and Figcaption-->
                 <fig>
-                    <img src="Images/project1.png" alt="Screenshot Preview of Web Project 1" class="all-project-image">
+                    <img src="Images/project1.png" alt="Screenshot Preview of Heba's Web Project 1" class="all-project-image">
                     <figcaption>
                         <p>Screenshot preview of Heba's Web Project 1</p>
                     </figcaption>
                 </fig>
                 </br></br>
-                <!--Brief Desciption of Web Project 1-->
-                <p class="all-project-brief">This is my first Web Project. It's shopping site for my mock business, 
-                    the Hardware Hub. It sells different computer parts and gives information about them.</p>
-                </br>
+
+                <!--Brief Description of Web Project 1-->
+                <div class="all-project-brief">
+                    <h4>Brief Description</h4>
+                    <p>This is my first Web Project. It's shopping site for my mock business, 
+                        the Hardware Hub. It sells different computer parts and gives information about them.</p>
+                </div>
+                </br></br>
+
+                <!--View Project Button-->
                 <a href="https://heba-w.github.io/Web-Project-1--Heba-/index.html" class="all-project-link" target="_blank">View Project</a>
-                </br>
+                </br></br>
+
                 <!--Detailed Description of Web Project 1-->
                 <div class="all-project-detail">
                     <h4>Detailed Description</h4>
                     <p>When I first started programming this website, I was very excited because I thought 
-                        I could make anything I want. I didn't realize how much time and effort I would need though, 
+                        I could make anything I want. But didn't realize how much time and effort I would need,  
                         and that made me really tired. I was given 1 week to complete it, which I thought wasn't enough, 
                         so that's why it looks rushed. When I got my marks back, I looked at what I needed to improve on, 
                         like proper semantic tags, and indentation. This helped me prepare for my other Web Projects. 
@@ -148,6 +162,7 @@
             <!--Showcasing Web Project 2-->
             <div class="all-project">
                 <h3>• Web Project 2 •</h3>
+
                 <!--Web Project 2 Image and Figcaption-->
                 <fig>
                     <img src="Images/project2.png" alt="Screenshot Preview of Web Project 2" class="all-project-image">
@@ -155,15 +170,20 @@
                         <p>Screenshot preview of Heba's Web Project 2</p>
                     </figcaption>
                 </fig>
-                </br>
-                </br>
+                </br></br>
+
                 <!--Brief Description of Web Project 2-->
-                <p class="all-project-brief">My second Web Project is about Treaty 1. It has
-                    information like maps, historic terms, outside promises, and more. It's also when 
-                    I first tried CSS Styling.</p>
-                </br>
+                <div class="all-project-brief">
+                    <h4>Brief Description</h4>
+                    <p>My second Web Project is about Treaty 1. it has information like maps, 
+                        historic terms, outside promises, and more. It's also when I first 
+                        tried CSS Styling.</p>
+                </div>
+                </br></br>
+
                 <a href="https://heba-w.github.io/Web-Project--2---Heba-W/index.html" class="all-project-link" target="_blank">View Project</a>
-                </br>
+                </br></br>
+
                 <!--Detailed Description of Web Project 2-->
                 <div class="all-project-detail">
                     <h4>Detailed Description</h4>
@@ -179,6 +199,7 @@
             <!--Showcasing Web Project 3-->
             <div class="all-project">
                 <h3>• Web Project 3 •</h3>
+
                 <!--Web Project 3 Image and Figcaption-->
                 <fig>
                     <img src="Images/project3.png" alt="Webpage Preview of Web Project 3" class="all-project-image">
@@ -186,14 +207,19 @@
                         <p>Screenshot preview of Web Project 3</p>
                     </figcaption>
                 </fig>
-                </br>
-                </br>
+                </br></br>
+
                 <!--Brief Description of Web Project 3-->
-                <p class="all-project-brief">This is my third Web Project. It's an updated version of 
-                    Web Project 2. It has an improved color scheme and added organization.</p>
-                </br>
+                <div class="all-project-brief">
+                    <h4>Brief Description</h4>
+                    <p>This is my third Web Project. It's an updated version of Web Project 2. 
+                        It has an improved color scheme and added organization.</p>
+                </div>
+                </br></br>
+
                 <a href="https://heba-w.github.io/Web-Project-3/index.html" class="all-project-link" target="_blank">View Project</a>
-                </br>            
+                </br></br>
+
                 <!--Detailed Description of Project 3-->
                 <div class="all-project-detail">
                     <h4>Detailed Description</h4>
@@ -205,7 +231,6 @@
                     </p>
                 </div>
             </div>
-
         </section>
     </main>
 
@@ -216,7 +241,7 @@
             <p><span style="text-decoration: underline;">Email:</span><a href="https://www.microsoft.com/en-us/microsoft-365/outlook/log-in" target="_blank"> hwali@smail.pembinatrails.ca</a></p>
             <p><span style="text-decoration: underline;">Instagram:</span><a href="https://www.instagram.com/accounts/login/?hl=en" target="_blank"> instagram.com/hebaw</a></p>
             <p><span style="text-decoration: underline;">LinkedIn:</span><a href="https://www.linkedin.com/login" target="_blank"> linkedin.com/hebaw</a></p>
-            <p><span style="text-decoration: underline;">Phone:</span> +1 098-765-4321</p>
+            <p><span style="text-decoration: underline;">Phone:</span><a href="https://app.zoom.us/wc" target="_blank"> +1 098-765-4321</a></p>
         </div>
 
         <!--Center (Copyright Section)-->
@@ -226,5 +251,4 @@
         </div>
     </footer>
 </body>
-
 </html>
